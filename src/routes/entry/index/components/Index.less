@@ -1,0 +1,109 @@
+@import "~antd/lib/style/themes/default.less";
+
+:global(.searchTipRow) {
+  :global(span.ant-input-search) {
+    line-height: 40px;
+    :global(.firstRowInput) {
+      > input {
+        max-width: 350px;
+      }
+    }
+  }
+}
+
+:global(.pageHeaderExtra_Row) {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  button {
+    margin-Bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  :global(.searchTipRow) {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :global(.searchTipRow) {
+    :global(.firstRowInput) {
+      width: 50%;
+    }
+  }
+}
+
+
+:global(.antd-pro-standard-form-row-content) {
+  margin-top: 8px;
+  :global(.ant-row) {
+    :global(.ant-form-item) {
+      display: block;
+      :global(.ant-form-item-label) {
+        float: left;
+        > label {
+          color: rgba(0, 0, 0, 0.65);
+        }
+      }
+
+      :global(.ant-form-item-control-wrapper) {
+        display: block;
+      }
+    }
+  }
+}
+
+.coverCardList {
+  margin-bottom: -24px;
+
+  .card {
+    :global {
+      .ant-card-meta-title {
+        margin-bottom: 4px;
+        & > a {
+          color: @heading-color;
+        }
+      }
+      .ant-card-meta-description {
+        height: 44px;
+        line-height: 22px;
+        overflow: hidden;
+      }
+    }
+
+    &:hover {
+      :global {
+        .ant-card-meta-title > a {
+          color: @primary-color;
+        }
+      }
+    }
+  }
+}
+
+.cardItemContent {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: -4px;
+  line-height: 20px;
+  height: 20px;
+  & > span {
+    color: @text-color-secondary;
+    flex: 1;
+    font-size: 12px;
+  }
+  .avatarList {
+    flex: 0 1 auto;
+  }
+
+}
+.cardList {
+  margin-top: 24px;
+}

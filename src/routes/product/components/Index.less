@@ -1,0 +1,73 @@
+@import "~antd/lib/style/themes/default.less";
+
+
+:global(.antd-pro-standard-form-row-content) {
+  margin-top: 8px;
+  :global(.ant-row) {
+    :global(.ant-form-item) {
+      display: block;
+      :global(.ant-form-item-label) {
+        float: left;
+        > label {
+          color: rgba(0, 0, 0, 0.65);
+        }
+      }
+
+      :global(.ant-form-item-control-wrapper) {
+        display: block;
+      }
+    }
+  }
+}
+
+.coverCardList {
+  margin-bottom: -24px;
+
+  .card {
+    .card_a {
+      color: @heading-color;
+    }
+
+    :global {
+      .ant-card-meta-title {
+        margin-bottom: 4px;
+        & > :global(.card_a_title) {
+          color: @heading-color;
+        }
+      }
+      .ant-card-meta-description {
+        height: 44px;
+        line-height: 22px;
+        overflow: hidden;
+      }
+    }
+
+    &:hover {
+      :global {
+        .ant-card-meta-title > :global(.card_a_title) {
+          color: @primary-color;
+        }
+      }
+    }
+  }
+}
+
+.cardItemContent {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: -4px;
+  line-height: 20px;
+  height: 20px;
+  & > span {
+    color: @text-color-secondary;
+    flex: 1;
+    font-size: 12px;
+  }
+  .avatarList {
+    flex: 0 1 auto;
+  }
+
+}
+.cardList {
+  margin-top: 24px;
+}

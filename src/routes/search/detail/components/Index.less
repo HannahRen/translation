@@ -1,0 +1,60 @@
+@import "~antd/lib/style/themes/default.less";
+
+:global(.antd-pro-page-header-pageHeader):first-child {
+  margin-Top: 25px;
+  :global(.antd-pro-page-header-title){
+    :global(.title) {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+    :global(.keyname) {
+      padding-left: 15px;
+    }
+  }
+  :global(.antd-pro-description-list-descriptionList){
+    padding-left: 15px;
+    margin-bottom: 3px;
+  }
+}
+
+:global(.antd-pro-page-header-pageHeader):last-child {
+  margin-top: 8px;
+  :global(.antd-pro-page-header-detail){
+    :global(.antd-pro-page-header-main) {
+      :global(.antd-pro-page-header-content) {
+        :global(.ant-card-head-wrapper) {
+          > div {
+            font-size: 18px;
+          }
+        }
+        :global(.ant-card-body) {
+          :global(.antd-pro-description-list-descriptionList) {
+            :global(.ant-divider) {
+              float: left;
+            }
+            :global(.des_jichu) {
+              margin-top: 20px;
+              margin-bottom: 10px;
+              :global(.antd-pro-description-list-term){
+                display: block;
+              }
+              :global(.antd-pro-description-list-detail){
+                display: block;
+              }
+            }
+            :global(.des_fanyi) {
+              margin-top: 20px;
+              margin-bottom: 10px;
+              :global(.antd-pro-description-list-term){
+                display: block;
+              }
+              :global(.antd-pro-description-list-detail){
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
