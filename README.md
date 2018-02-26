@@ -1,4 +1,4 @@
-Game entry translation system based on React/Redux/Ant design
+>Game entry translation system based on React/Redux/Ant design
 #### install dependencies
     npm install
 
